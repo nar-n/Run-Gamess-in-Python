@@ -14,7 +14,7 @@ def run_gamess(input_file):
     subprocess.run(command_str, shell=True, cwd=os.path.dirname(gamess_bat))
 
 if __name__ == "__main__":
-    folder_path = r"C:\Project\software\test"  # Folder containing input files
+    folder_path = r"C:\Project\"  # Folder containing input files
     input_files = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path) if file_name.endswith(".inp")]
 
     # Run GAMESS calculations
